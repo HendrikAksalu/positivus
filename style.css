@@ -22,7 +22,7 @@
         gap: 40px;
     }
 
-    .headerDivPicture{
+    .headerDivPicture { 
         width: 67%;
         text-align: right;
         max-width: 700px;
@@ -33,16 +33,39 @@
         height: auto;
     }
 
-    h1{
+    h1 {
         font-size: 60px;
         text-align: left;
     }
 
-    .logosHome{
+    .logosHome {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 100px;
+    }
+
+    .servicesMain { 
+        margin-left: 140px;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .servicesBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicesBlockOne, .servicesBlockTwo, .servicesBlockThree {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .servicesBlockText, .servicesBlockOneImage {
+        padding: 50px;
+        font-size: 20px;
     }
 
 nav {
@@ -54,7 +77,7 @@ nav {
     margin: 0 auto;
 }
 
-.navHeader, a{
+.navHeader, a {
     margin: 0 12px;
     color: black;
     text-decoration: none;
@@ -70,7 +93,7 @@ nav {
     gap: 10px;
 }
 
-.buttonNavigating, .letsMakeButton, .teamButton, .contactUsMessage {
+.buttonNavigating {
     text-align: center;
     background-color: #191A23;
     color: white;
@@ -80,8 +103,88 @@ nav {
     align-self: flex-start;
 }
 
-.logosHome{
+.logosHome {
     filter: grayscale(100%); 
+}
+
+.servicesMain {
+    display: flex;
+    gap: 25px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.servicesMainH2 {
+    background-color: #B9FF66;
+    font-size: 40px;
+    border-radius: 6px; 
+}
+
+.servicesBlockOne, .servicesBlockTwo, .servicesBlockThree {
+    padding: 20px;
+}
+
+.servicesBlockOneFirst, .servicesBlockTwoSecond {
+    display: flex;
+    background-color: #F3F3F3;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+}
+
+.greenH3 {
+    background-color: #B9FF66;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.whiteH3 {
+    background-color: #ffff;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.servicesBlockTextIconBlack, .servicesBlockTextIconWhite {
+    width: 17%;
+    height: auto;
+    padding-top: 18px;
+}
+
+.servicesBlockOneImage {
+    text-align: right;
+}
+
+.servicesBlockOneSecond, .servicesBlockThreeFirst {
+    display: flex;
+    background-color: #B9FF66;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+}
+
+.servicesBlockTwoFirst, .servicesBlockThreeSecond {
+    display: flex;
+    background-color: #191A23;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+}
+
+.servicesA {
+    color: #ffff;
+}
+
+.servicesBlockText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicesIconLink {
+    margin-top: auto;
 }
 
 button {
@@ -105,7 +208,7 @@ html, body {
 } 
 
 /*PHONE*/
-@media (max-width: 430px){
+@media (max-width: 430px) {
 
     nav {
         flex-direction: column; 
@@ -114,7 +217,7 @@ html, body {
         width: 100%; 
     }
     
-    .navHeader{
+    .navHeader {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -122,7 +225,7 @@ html, body {
         gap: 10px;
     }
     
-    .navigatingDiv{
+    .navigatingDiv {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -144,12 +247,33 @@ html, body {
         height: auto;
     }
 
-    .logosHome{
+    .logosHome {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 30px;
         gap: 20px;
+    }
+
+    .servicesMain {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .servicesMainH2 {
+        display: inline-block;
+    }
+
+    .servicesBlockOne, .servicesBlockTwo, .servicesBlockThree {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .servicesBlockImage {
+        width: 70%;
+        height: auto;
     }
 
 }
@@ -168,19 +292,29 @@ html, body {
         height: auto;
     }
     
-    .navigatingDiv{
+    .navigatingDiv {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-left: 30px;
     }
 
-    .logosHome{
+    .logosHome {
         padding-left: 30px;
         display: flex;
         gap: 20px;
     }
 
+    .servicesMain {
+        margin-left: 20px;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .servicesBlockOne, .servicesBlockTwo, .servicesBlockThree {
+        display: flex;
+        gap: 40px;
+    }
 
 }
 
